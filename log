@@ -42,3 +42,27 @@ treemap.c:86:14: error: returning ‘int’ from a function with return type ‘
 cc1: all warnings being treated as errors
 Compilation failed
 c187143
+Fri 21 Apr 2023 12:16:19 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:76:23: error: ‘map’ undeclared (first use in this function)
+   76 |   TreeNode* current = map->root;
+      |                       ^~~
+treemap.c:76:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:78:15: error: ‘TreeNode’ has no member named ‘key’
+   78 |     if(current->key > key){
+      |               ^~
+treemap.c:81:20: error: ‘TreeNode’ has no member named ‘key’
+   81 |     else if(current->key < key){
+      |                    ^~
+treemap.c:84:15: error: ‘TreeNode’ has no member named ‘key’
+   84 |     if(current->key == key){
+      |               ^~
+treemap.c:86:14: error: returning ‘int’ from a function with return type ‘Pair *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   86 |       return 1;
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+63cc9bc
