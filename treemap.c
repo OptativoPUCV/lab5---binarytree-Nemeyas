@@ -180,6 +180,5 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
         tree->current = parent;
     }
-  }
-    return (tree->current=NULL) ? NULL : current->pair;
+    return (tree->current=NULL) ? NULL : tree->current->pair;
 }
