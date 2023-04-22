@@ -405,3 +405,14 @@ treemap.c:162:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__at
       |     ^~~~~~
 Compilation failed
 97e2e5b
+Sat 22 Apr 2023 11:29:55 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:161:13: error: unused variable ‘a’ [-Werror=unused-variable]
+  161 |   TreeNode *a;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+08d76c0
