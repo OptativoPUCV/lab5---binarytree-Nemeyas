@@ -124,6 +124,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     TreeNode* minimo = minimum(node->left);
     node->pair->key= minimo->pair->key;
     node->pair->value= minimo->pair->value;
+    tree->root=node;
     return removeNode(tree,minimo);
   }
 }
