@@ -120,7 +120,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     free(node->pair);
     free(node);
   }
-  else{
+  if (node->left != NULL && node->right != NULL){{
     TreeNode* minimo = minimum(node->left);
     node->pair= minimo->pair;
     return removeNode(tree,minimo);
