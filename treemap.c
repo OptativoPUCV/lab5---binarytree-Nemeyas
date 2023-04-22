@@ -122,8 +122,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
   }
   else{
     TreeNode* minimo = minimum(node->left);
-    node->pair->key= minimo->pair->key;
-    node->pair->value= minimo->pair->value;
+    node->pair= minimo->pair;
     return removeNode(tree,minimo);
   }
 }
